@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/oblubene"
+        android:title="Obľúbené" />
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/search"
+        android:title="search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/action_add"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:title="pridaj podnik"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/logout"
+        android:title="Odhlásiť sa " />
+
+
+</menu>

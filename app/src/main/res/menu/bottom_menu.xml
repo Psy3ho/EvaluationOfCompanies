@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bar"
+        android:icon="@mipmap/ic_stars_black_24dp"
+        android:title="Top podniky" />
+    <item
+        android:id="@+id/restauracia"
+        android:icon="@mipmap/ic_restaurant_white_24dp"
+        android:title="Reštaurácia"
+        />
+    <item
+        android:id="@+id/pizza"
+        android:icon="@mipmap/ic_local_pizza_white_24dp"
+        android:title="Pizza" />
+    <item
+        android:id="@+id/kaviaren"
+        android:icon="@mipmap/ic_local_cafe_white_24dp"
+        android:title="Kaviareň" />
+    <item
+        android:id="@+id/fastfood"
+        android:icon="@drawable/hamburger"
+        android:title="Fast food" />
+</menu>

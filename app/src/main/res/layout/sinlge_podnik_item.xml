@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardviewsingle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/nav_header_vertical_spacing"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/obrazoksingle"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/restauracia" />
+
+            <TextView
+                android:id="@+id/nazovsingle"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:autoSizeMaxTextSize="24sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:text="Názov podniku"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/telefonsingle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toEndOf="@+id/obrazoksingle" />
+
+            <TextView
+                android:id="@+id/telefonsingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:text="Telefón podniku"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.149"
+                app:layout_constraintStart_toEndOf="@+id/obrazoksingle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/adresasingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="Adresa podniku"
+                android:textAlignment="viewStart"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.149"
+                app:layout_constraintStart_toEndOf="@+id/obrazoksingle"
+                app:layout_constraintTop_toBottomOf="@+id/telefonsingle" />
+
+            <TextView
+                android:id="@+id/popissingle"
+                android:layout_width="282dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. "
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/obrazoksingle" />
+
+            <ImageView
+                android:id="@+id/obrazokoblubene"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@mipmap/ic_star_border_black_24dp" />
+
+            <ImageView
+                android:id="@+id/obrazokkomentare"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle"
+                app:srcCompat="@mipmap/ic_comment_black_24dp" />
+
+            <TextView
+                android:id="@+id/oblubenesingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0 Oblúbené "
+                android:textAlignment="textStart"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/obrazokoblubene"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle" />
+
+            <TextView
+                android:id="@+id/komentaresingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="25dp"
+                android:text="0 komentárov"
+                android:textAlignment="textEnd"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/obrazokkomentare"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle" />
+
+            <TextView
+                android:id="@+id/hodnoteniesingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:text="TextView"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/obrazokoblubene"
+                app:layout_constraintTop_toBottomOf="@+id/oblubenesingle"
+                tools:text="0/5 Hodnotenie (0)" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

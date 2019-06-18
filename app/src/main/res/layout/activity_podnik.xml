@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/hlavicka"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/backPodniku"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/obrazoksingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/restauracia" />
+
+            <EditText
+                android:id="@+id/komentarW"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:cursorVisible="false"
+                android:hint="napíš komentár... "
+                android:inputType="text|textMultiLine"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@color/backPodniku"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/obrazokkomentare"
+                app:layout_constraintHorizontal_bias="0.312"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/komentaresingle" />
+
+
+            <ImageView
+                android:id="@+id/podciarknutie"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/komentarW"
+                app:srcCompat="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/nazovsingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:text="Názov podniku"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/obrazoksingle" />
+
+            <TextView
+                android:id="@+id/telefonsingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"
+                android:autoLink="phone"
+                android:text="Telefón podniku"
+                android:textAlignment="textStart"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/obrazokoblubene"
+                app:layout_constraintStart_toEndOf="@+id/telefonB"
+                app:layout_constraintTop_toBottomOf="@+id/nazovsingle" />
+
+            <TextView
+                android:id="@+id/adresasingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="22dp"
+                android:autoLink="none"
+                android:text="Adresa podniku"
+                android:textAlignment="textStart"
+                android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/lokacia"
+                app:layout_constraintTop_toBottomOf="@+id/telefonsingle" />
+
+            <TextView
+                android:id="@+id/popissingle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Ls ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. "
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adresasingle" />
+
+            <ImageView
+                android:id="@+id/obrazokoblubene"
+                android:layout_width="32dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nazovsingle"
+                app:srcCompat="@mipmap/ic_star_border_black_24dp" />
+
+            <ImageView
+                android:id="@+id/obrazokkomentare"
+                android:layout_width="34dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/komentaresingle"
+                app:srcCompat="@mipmap/ic_comment_black_24dp" />
+
+            <TextView
+                android:id="@+id/oblubenesingle"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0 Oblúbené "
+                android:textAlignment="textStart"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/obrazokoblubene" />
+
+            <TextView
+                android:id="@+id/komentaresingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="37dp"
+                android:text="0 komentárov"
+                android:textAlignment="textEnd"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@color/colorAccent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/podciarknutie">
+
+                <FrameLayout
+                    android:id="@+id/komentar_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/telefonB"
+                android:layout_width="45dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/adresasingle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nazovsingle"
+                app:layout_constraintVertical_bias="0.125"
+                app:srcCompat="@drawable/telefon" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapa"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:context=".MapsActivity" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/lokacia"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/popissingle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/telefonsingle"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/location" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#867f7f"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressTint="#e7d800"
+                android:secondaryProgressTint="#8c0005"
+                android:stepSize="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle" />
+
+            <TextView
+                android:id="@+id/hodnotenie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:text="0 / 5"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/ratingBar"
+                app:layout_constraintTop_toBottomOf="@+id/popissingle" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

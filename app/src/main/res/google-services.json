@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "418312302503",
+    "firebase_url": "https://bachelorwork-ff8b7.firebaseio.com",
+    "project_id": "bachelorwork-ff8b7",
+    "storage_bucket": "bachelorwork-ff8b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418312302503:android:bcd0b8134915e008",
+        "android_client_info": {
+          "package_name": "com.example.egoeu.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418312302503-pv8d052035bqjr0no0rh0ul10oap7qu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.egoeu.myapplication",
+            "certificate_hash": "0987589c39a18595dc4bb709d5ea0cbdd16a2609"
+          }
+        },
+        {
+          "client_id": "418312302503-k70bttv6i2fhfnt1cq3ldmjsmh6vh4tc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwxGKyQaRhkyiBuqWW7BicluV9CUfzQ9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418312302503-k70bttv6i2fhfnt1cq3ldmjsmh6vh4tc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

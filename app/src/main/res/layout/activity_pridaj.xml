@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintpridaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.egoeu.myapplication.UI.Pridaj">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/jedlopizza" />
+
+        <EditText
+            android:id="@+id/nazov"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="názov"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/popis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autoLink="all"
+            android:hint="popis, web, email"
+            android:inputType="text|textMultiLine"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nazov" />
+
+        <EditText
+            android:id="@+id/telefon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="telefón"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popis" />
+
+        <EditText
+            android:id="@+id/adresa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="adresa"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefon" />
+
+        <Button
+            android:id="@+id/pridajPodnikB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/colorAccent"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Pridaj podnik"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/typy"
+            tools:textAllCaps="false" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRestauracia"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:checked="true"
+            android:text="Reštaurácia"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adresa" />
+
+        <CheckBox
+            android:id="@+id/checkBoxpizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Pizzeria"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRestauracia" />
+
+        <CheckBox
+            android:id="@+id/checkBoxkaviaren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Kaviareň"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxpizza" />
+
+        <CheckBox
+            android:id="@+id/checkBoxjedalen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Jedáleň"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxRestauracia"
+            app:layout_constraintTop_toBottomOf="@+id/adresa" />
+
+        <CheckBox
+            android:id="@+id/checkBoxkebab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:text="Kebab"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxpizza"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxjedalen" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="Bar"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxkaviaren"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxkebab" />
+
+        <CheckBox
+            android:id="@+id/checkBoxpivovar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Piváreň"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxkaviaren" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFastFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            android:text="Fast food"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxpivovar"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxBar" />
+
+        <EditText
+            android:id="@+id/typy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Iné typy podnikov...  "
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxpivovar" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
